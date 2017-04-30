@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Swim-lab-3-2</string>
+    <string name="settingsButtonText">Ustawienia aplikacji</string>
+    <string name="savedDataButtonText">Zestaw zapamietanych danych</string>
+
+    <string-array name="welcome_texts">
+        <item>Witaj, przyjacielu!</item>
+        <item>Dzień dobry, mój drogi!</item>
+        <item>No hejka!</item>
+        <item>Welcome to the Jungle!</item>
+    </string-array>
+</resources>

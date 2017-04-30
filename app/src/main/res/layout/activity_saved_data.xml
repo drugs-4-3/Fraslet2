@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="learning.ifeel3.swim_lab_3_2.SavedDataActivity">
+
+
+    <TextView
+        android:id="@+id/savedDataTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dane osoby:"
+        android:textSize="30dp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/sexRadioButtonsTitle"
+        android:text="Wybierz plec:"
+        android:textSize="23dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/savedDataTitle"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"/>
+
+    <RadioGroup
+        android:id="@+id/sexRadioButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:layout_below="@id/savedDataTitle"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/sexRadioButtonsTitle"
+        android:padding="16dp">
+        <RadioButton
+            android:id="@+id/radio_woman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kobieta"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+            android:id="@+id/radio_man"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mezczyzna"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/ageSpinnerTitle"
+        android:text="Wybierz wiek:"
+        android:textSize="23dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/sexRadioButtons"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"/>
+
+    <Spinner
+        android:id="@+id/ageSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/sexRadioButtons"
+        android:layout_toRightOf="@id/ageSpinnerTitle"
+        android:layout_alignParentRight="true">
+
+    </Spinner>
+
+    <TextView
+        android:id="@+id/nameEditTextTitle"
+        android:text="Podaj imie:"
+        android:textSize="23dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/ageSpinnerTitle"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/nameEditText"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/ageSpinnerTitle"
+        android:layout_toRightOf="@id/nameEditTextTitle"
+        android:layout_alignParentRight="true"
+        android:hint="Jan Kowalski"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/doneButton"
+        android:text="Done!"
+        android:layout_below="@id/nameEditText"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="64dp"
+        android:onClick="doneButtonClicked"/>
+
+
+
+
+</RelativeLayout>
